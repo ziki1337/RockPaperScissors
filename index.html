@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RPS</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css" id="themeStylesheet">
+</head>
+<body>
+
+	<div class="Theme">
+		<img src="dark.png" alt="Иконка" class="icon3" id="DN" onclick="DayNight()" >
+	</div>
+
+<div class="container">
+	<div class="Text1"> 
+		<a>Make your choice</a>
+	</div>
+	<div class="elements">
+    <div class="choice" id="rock">
+        <img src="rock.png" alt="Иконка" class="icon" onclick="UserChoice('rock')" id="rockIMG">
+    </div>
+    <div class="choice" id="paper">
+        <img src="paper.png" alt="Иконка" class="icon" onclick="UserChoice('paper')" id="paperIMG">
+    </div>
+    <div class="choice" id="scissors">
+        <img src="scissors.png" alt="Иконка" class="icon" onclick="UserChoice('scissors')" id="scissorsIMG">
+    </div>
+	</div>
+	<div class="Text2">
+        <p class="Text1" id="TextWL">You 0 VS 0 God</p>
+    </div>
+    <div class="Text3">
+        <p class="Text1" id="TextD">Draws: 0</p>
+    </div>
+</div>
+
+<div id="popup1" class="popup">
+    <a class="popup_area"></a>
+    <div class="popup_body">
+        <div class="popup_content">
+            <a href="#" class="popup_close">×</a>
+            <div class="popup_text">
+                
+                <p class="Text4">You won!</p>
+                <p class="Text5">God chose the:</p>
+                <img src="scissors.png" alt="Иконка" class="icon2" id="MyImage1">
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div id="popup2" class="popup">
+    <a class="popup_area" ></a>
+    <div class="popup_body">
+        <div class="popup_content">
+            <a href="#" class="popup_close">×</a>
+            <div class="popup_text">
+                
+                <p class="Text4">You lose!</p>
+                <p class="Text5">God chose the:</p>
+                <img src="scissors.png" alt="Иконка" class="icon2" id="MyImage2">
+            </div>
+            
+        </div>
+    </div>
+</div>
+<div id="popup3" class="popup">
+    <a class="popup_area"></a>
+    <div class="popup_body">
+        <div class="popup_content">
+            <a href="#" class="popup_close">×</a>
+            <div class="popup_text">
+                
+                <p class="Text4">Draw!</p>
+                <p class="Text5">God chose the:</p>
+                <img src="scissors.png" alt="Иконка" class="icon2" id="MyImage3">
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js/script.js"> </script>
+</body>
+</html>
